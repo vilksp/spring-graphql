@@ -17,6 +17,7 @@ type Film{
 }
 type Query{
     getAllActors:[Actor],
-    getActorById(id:Float):Actor
+    getActorById(id:Float):Actor,
+    getAllFilms:[Film]
 
 }
