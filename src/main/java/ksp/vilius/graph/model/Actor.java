@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 @Data
@@ -19,4 +20,8 @@ public class Actor {
     private Long id;
     private String firstName;
     private String lastName;
+    private Date dateOfBirth;
+    private String address;
+
+    private Integer filmId;
 }
