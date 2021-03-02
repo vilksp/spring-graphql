@@ -2,7 +2,7 @@ schema {
     query: Query
 }
 type Actor{
-    actorId:ID!,
+    id:ID!,
     firstName:String,
     lastName:String,
     dateOfBirth:String,
@@ -16,6 +16,7 @@ type Film{
 
 }
 type Query{
-    getAllActors:[Actor]
+    getAllActors:[Actor],
+    getActorById(id:Float):Actor
 
 }
