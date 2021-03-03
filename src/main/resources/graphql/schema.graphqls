@@ -1,5 +1,6 @@
 schema {
-    query: Query
+    query: Query,
+    mutation: Mutation
 }
 type Actor{
     id:ID!,
@@ -20,4 +21,7 @@ type Query{
     getActorById(id:Float):Actor,
 
 
+}
+type Mutation{
+    updateAddress(id:Float,address:String):Actor
 }
