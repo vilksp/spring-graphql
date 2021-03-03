@@ -25,11 +25,11 @@ public class SpringGraphApplication {
 
     @PostConstruct
     public void loadData() {
-        actorRepository.save(Actor.builder().id(1L).filmId(1).firstName("John").lastName("Wick").address("Brooklyn").dateOfBirth(new Date(1999, 9, 14)).build());
-        actorRepository.save(Actor.builder().id(2L).filmId(2).firstName("Mister").lastName("Bean").address("London").dateOfBirth(new Date(1994, 3, 6)).build());
+        actorRepository.save(Actor.builder().id(1L).filmId(3L).firstName("John").lastName("Wick").address("Brooklyn").dateOfBirth(new Date(1999, 9, 14)).build());
+        actorRepository.save(Actor.builder().id(2L).filmId(4L).firstName("Mister").lastName("Bean").address("London").dateOfBirth(new Date(1994, 3, 6)).build());
 
-        filmRepository.save(Film.builder().id(1L).film_name("Hot summer nights").filmId(2).releaseYear(new Date(2018)).build());
-        filmRepository.save(Film.builder().id(2L).film_name("Stars in our fault").filmId(1).releaseYear(new Date(99)).build());
+        filmRepository.save(Film.builder().id(1L).film_name("Hot summer nights").releaseYear(new Date(2018)).build());
+        filmRepository.save(Film.builder().id(2L).film_name("Stars in our fault").releaseYear(new Date(99)).build());
     }
 
 }

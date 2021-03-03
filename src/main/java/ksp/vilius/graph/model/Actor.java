@@ -25,5 +25,5 @@ public class Actor {
     private Date dateOfBirth;
     private String address;
 
-    private Integer filmId;
+    private Long filmId;
 }

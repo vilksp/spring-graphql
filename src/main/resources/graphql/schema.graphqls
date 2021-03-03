@@ -7,10 +7,10 @@ type Actor{
     lastName:String,
     dateOfBirth:String,
     address:String,
-    filmId:Int
+    film:Film
 }
 type Film{
-    filmId:ID!,
+    id:ID!,
     film_name:String,
     releaseYear:String
 
@@ -18,6 +18,6 @@ type Film{
 type Query{
     getAllActors:[Actor],
     getActorById(id:Float):Actor,
-    getAllFilms:[Film]
+
 
 }
